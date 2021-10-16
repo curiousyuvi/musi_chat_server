@@ -1,0 +1,21 @@
+{
+  "name": "musi_chat_server",
+  "version": "1.0.0",
+  "description": "Server for musi_chat flutter frontend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "musi_chat"
+  ],
+  "author": "curiousyuvi",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13",
+    "socket.io": "^4.3.0"
+  }
+}
