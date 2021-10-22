@@ -1,21 +1,26 @@
 {
   "name": "musi_chat_server",
   "version": "1.0.0",
-  "description": "Server for musi_chat flutter frontend",
+  "description": "Back end server for Musi Chat App",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14",
+    "socket.io": "^2.3.0"
   },
-  "keywords": [
-    "musi_chat"
-  ],
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curiousyuvi/musi_chat_server.git"
+  },
   "author": "curiousyuvi",
   "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.13",
-    "socket.io": "^4.3.0"
-  }
+  "bugs": {
+    "url": "https://github.com/curiousyuvi/musi_chat_server/issues"
+  },
+  "homepage": "https://github.com/curiousyuvi/musi_chat_server#readme"
 }
