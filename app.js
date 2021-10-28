@@ -1,8 +1,22 @@
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
-const userRoutes = require("./api/routes/users");
 const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+const userRoutes = require("./api/routes/users");
+const dotenv = require("dotenv");
+
+dotenv.config();
+
+mongoose
+  .connect(
+    "mongodb+srv://" +
+      process.env.DB_USERNAME +
+      ":" +
+      process.env.DB_PASSWORD +
+      "@musi-chat-cluster.cpjn6.mongodb.net/musi-chat-database?retryWrites=true&w=majority"
+  )
+  .then(() => console.log("musi-chat database connected"));
 
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
