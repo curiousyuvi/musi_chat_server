@@ -5,13 +5,14 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.14",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "nodemon server",
+    "start": "node server"
   },
   "repository": {
     "type": "git",
